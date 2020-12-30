@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+    <script>
+        function changeColor(newColor){
+            var elem=document.getElementById('for');
+            elem.style.color=newColor;
+        }
+    </script>
+</head>
+<body>
+    <h1>BIENVENIDOS A MI PRACTICA DE JAVASCRIPT</h1>
+    <h2>What can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content</p>
+    <button type="button"
+    onclick='document.getElementById("demo").innerHTML="HELLO WORLD"'>Click ME!</button>
+    <br><br>
+    <p id="demo2">Javascript can change the styles of an HTML content</p>
+    <button type="button" onclick="document.getElementById('demo2').style.changeColor('blue')">click</button>
+    <br><br><p id="for">Cualquier texto acá</p>
+    <button onclick="changeColor('red');">Azul</button>
+
+</body>
+</html>
