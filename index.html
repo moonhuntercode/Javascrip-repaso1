@@ -71,6 +71,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
     </style>
     <!--css parte terminada-->
 
@@ -86,8 +87,12 @@ document.get
         }
         function functiondarklightmode(){
             var palanca=document.body;
-            palanca.classList.toggle("dark-mode");
+            y=palanca.classList.toggle("dark-mode");
+        
         }
+
+       
+        /*document.getElementById("span-darkmode-to-lightmode").innerHTML="light mode" */
         /*function textlightmode(){
             var x=document.getElementById("button-dar-light");
             if(x.display==="dark mode"){
@@ -118,9 +123,11 @@ document.get
         <input type="checkbox" checked>
         <span class="slider round"></span>
     </label>-->
-    <button id="button-dark-light" onclick='functiondarklightmode(),style.fontSize="33px",document.getElementById("span-darkmode-to-lightmode").innerHTML="light mode" '>
+
+    <button id="button-dark-light" onclick='functiondarklightmode(),functiondarklightmode2() '>
        <span id="span-darkmode-to-lightmode">dark mode</span>
     </button>
+    
         <!--toggles coloridos terminados
         source: https://www.w3schools.com/howto/howto_css_switch.asp
         -->
