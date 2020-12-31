@@ -33,24 +33,24 @@
         .slider{
             position:absolute;
             cursor: pointer;top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
         }
         .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        }
 input:checked + .slider {
   background-color: #2196F3;
 }
@@ -72,6 +72,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
     </style>
+    <!--css parte terminada-->
+
     <script>
         function changeColor(newColor){
             var elem=document.getElementById('for');
@@ -86,33 +88,43 @@ document.get
             var palanca=document.body;
             palanca.classList.toggle("dark-mode");
         }
-        function textlightmode(){
+        /*function textlightmode(){
             var x=document.getElementById("button-dar-light");
             if(x.display==="dark mode"){
                 x.display="light mode";
             }
         }
+            function checkdarkmode(){
+                var checkbox=document.getElementById("switch2");
+                if(checkbox.checked ==true){
+                   functiondarklightmode();
+                }
+            }
+*/
     </script>
 </head>
 <body>
     <h1>BIENVENIDOS A MI PRACTICA DE JAVASCRIPT</h1>
+
     <!--toggles coloridos -->
-    <label  class="switch">
-        <input type="checkbox" checked>
-        <span class="slider round"></span>
-    </label>
-    <label class="switch">
-        <input type="checkbox">
+    <label  class="switch" >
+        <input type="checkbox" id="switch2" onclick="functiondarklightmode()">
         <span class="slider round"></span>
     </label>
 
+    
+    <!--CHECKED
+        <label  class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+    </label>-->
     <button id="button-dark-light" onclick="functiondarklightmode(),style.fontSize='33px',
     textlightmode" >
         dark mode</button>
         <!--toggles coloridos terminados
         source: https://www.w3schools.com/howto/howto_css_switch.asp
         -->
-        
+
      <!-- no funciona
     <button id="button-dark-light" onclick="functiondarklightmode(),style.fontSize='33px',
     document.getElementById('button-dark-light').innerHTML='light mode'" >
