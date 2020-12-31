@@ -108,7 +108,7 @@ document.get
 
     <!--toggles coloridos -->
     <label  class="switch" >
-        <input type="checkbox" id="switch2" onclick="functiondarklightmode()">
+        <input type="checkbox" id="switch2" onclick='functiondarklightmode(),document.getElementById("switch2").innerHTML"light mode" '>
         <span class="slider round"></span>
     </label>
 
@@ -120,7 +120,8 @@ document.get
     </label>-->
     <button id="button-dark-light" onclick="functiondarklightmode(),style.fontSize='33px',
     textlightmode" >
-        dark mode</button>
+       <span id="span-darkmode-to-lightmode">dark mode</span>
+    </button>
         <!--toggles coloridos terminados
         source: https://www.w3schools.com/howto/howto_css_switch.asp
         -->
