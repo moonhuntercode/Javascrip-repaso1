@@ -1,4 +1,9 @@
-    
+let cadena="holanga  !!!!!!";
+console.log(cadena.length);
+
+/* MÉTODOS EN JS */
+/**todos los metodos devuelven una cadena nueva, la cadena original no será modificada*/
+/** EMPEZANDO DARK MODE */
         function changeColor(newColor){
             var elem=document.getElementById('for');
             elem.style.color=newColor;
@@ -29,4 +34,4 @@ document.get
                 }
             }
 */
-    
+    /** TERMINANDO DARK MODE */  
