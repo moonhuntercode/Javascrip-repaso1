@@ -1,8 +1,11 @@
-let cadena="holanga  !!!!!!";
-console.log(cadena.length);
+let cadena="pariente";
+console.log( cadena.length);
 
 /* MÉTODOS EN JS */
 /**todos los metodos devuelven una cadena nueva, la cadena original no será modificada*/
+console.log("aquí volvemos en mayuscula todo: "+cadena+" a: "+cadena.toUpperCase());
+let cadenamayuscula=cadena.toUpperCase();//aqui     guardamos la mayuscula en 1 variable
+
 /** EMPEZANDO DARK MODE */
         function changeColor(newColor){
             var elem=document.getElementById('for');
