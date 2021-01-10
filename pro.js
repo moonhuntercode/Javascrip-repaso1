@@ -5,7 +5,13 @@ console.log( cadena.length);
 /**todos los metodos devuelven una cadena nueva, la cadena original no será modificada*/
 console.log("aquí volvemos en mayuscula todo: "+cadena+" a: "+cadena.toUpperCase());
 let cadenamayuscula=cadena.toUpperCase();//aqui     guardamos la mayuscula en 1 variable
+ function functionstring1() {
+     var a,texto;     
+     a=document.getElementById("imput1").value;
+     
 
+
+ }
 /** EMPEZANDO DARK MODE */
         function changeColor(newColor){
             var elem=document.getElementById('for');
