@@ -36,7 +36,7 @@ function functiondarklightmode() {
     y = palanca.classList.toggle("dark-mode");
 
 }
-
+alert("hola");
 
 /*document.getElementById("span-darkmode-to-lightmode").innerHTML="light mode" */
 /*function textlightmode(){
