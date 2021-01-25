@@ -145,11 +145,17 @@ input:checked + .slider:before {
 </ul>
 <h1>inputs con required(comprobadores) html5</h1>
 <form action="" name="formulario2" method="GET">
-    <input type="text" name="nombre" id="nombre">
-    <input type="radio" name="sexo" id="Hombre" value="Hombre">Hombre
-    <input type="radio" name="sexo" id="Mujer" value="Mujer">Mujer
+    <input type="text" name="nombre" id="nombre" maxlength="30">
+    <!--usando maxleght el uso de esto como capa de seguridad
+    es muy básico, puede mejorar muchisimo si lo validamos con
+    js también-->
+    <input type="radio" name="sexo" id="Hombre" value="Hombre" required>Hombre
+    <input type="radio" name="sexo" id="Mujer" value="Mujer"  required>Mujer
     <br>
-    <input type="checkbox" name="terminos">
+    <input type="checkbox" name="terminos" id="terminos" required>terminos & condiciones
+    <br>
+    <input type="submit" name="btn" id="btn" value="enviar" required>
+
 
 </form>
 <h1>lección 18: Vamos a trabajar con datos</h1>
