@@ -79,12 +79,9 @@ input:checked + .slider:before {
     <!--Js enlazado-->
 <script src="pro.js"></script>
 </head>
-<body>
-    <h1>BIENVENIDOS A MI PRACTICA DE JAVASCRIPT</h1>
-
-<h1>inputs con required(comprobadores) html5</h1>
-<p>MUCHAS GRACIAS DENTRO DE BREVE NOS PONDREMOS EN CONTACTO</p>
-<fieldset>
+<body><br>
+<h1 style="background-color: aqua;">MUCHAS GRACIAS DENTRO DE BREVE NOS PONDREMOS EN CONTACTO</h1>
+<fieldset id="show1" style="display: none;">
     <legend>datos de contacto</legend>
 <form action="contacto.html" name="formulario2" method="GET">
     <label for="">nombre completo</label>
@@ -102,6 +99,9 @@ input:checked + .slider:before {
 
 </form>
 </fieldset>
+<button type="button" onclick="document.getElementById('show1').style.display='contents' ">
+    otro formulario?</button>
+    <br><br>
 <a href="index.html">volver a inicio</a>
 <h1>lección 18: Vamos a trabajar con datos</h1>
 <!--FORMULARIOS CON HTML Y JS-->

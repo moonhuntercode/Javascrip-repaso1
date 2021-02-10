@@ -76,8 +76,16 @@
     <li>list2</li>
     <li>list3</li>
 </ul>
-<h1>inputs con required(comprobadores) html5</h1>
+
 <fieldset>
+    <legend>escondiendo texto</legend>
+    <h1>What can JavaScript do?</h1>
+<p id="hide">escondeme</p>
+<button type="button" onclick="document.getElementById('hide').style.display='none' ">
+tocame para esconder!</button>
+</fieldset>
+<h1>inputs con required(comprobadores) html5</h1>
+<fieldset id="hide1">
     <legend>datos de contacto</legend>
 <form action="contacto.html" name="formulario2" method="GET">
     <label for="nombre">nombre completo</label>
@@ -96,7 +104,8 @@
     <br>
     <input type="submit" name="btn" id="btn" value="enviar" required>
     <br>
-    <label for="pais">pais</label><select name="pais" id="pais">
+    <label for="pais">pais</label>
+    <select name="pais" id="pais">
         <option value="seleccione" selected disabled hidden>seleccione</option>
         <!--selected selecciona a este primer valor de arriba como pordefecto
         pero disable lo deshabilita para no selecccionarlo en el despliege
@@ -105,9 +114,12 @@
         <option value="perú">perú</option>
         <option value="argentina">argentina</option>
     </select>
-
+    <button type="button" onclick="document.getElementById('hide1').style.display='none' ">
+        tocame para esconder!</button>
 </form>
 </fieldset>
+<button type="button" onclick="document.getElementById('hide1').style.display='block' ">
+    tocame para mostrar denuevo!</button>
 <h1>lección 18: Vamos a trabajar con datos</h1>
 <!--FORMULARIOS CON HTML Y JS-->
 
