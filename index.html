@@ -5,75 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practica js</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <style>
-        
-        body{
-            background-color:rgb(255, 255, 255);
-            color: black;
-        }
-        p{
-            background-color: rgba(101, 255, 229, 0.418);
-        }
-        .dark-mode{
-            background-color: black;
-            color: white;
-        }
-
-        /*aquí empezamos a estilizar los toggles*/
-        .switch{
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 35px;
-        }
-        .switch input{
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        .slider{
-            position:absolute;
-            cursor: pointer;top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
-        }
-        .slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-        }
-input:checked + .slider {
-  background-color: #2196F3;
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 35px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-    </style>
+   
     <!--css parte terminada-->
 
     <!--Js enlazado-->
@@ -122,7 +54,7 @@ input:checked + .slider:before {
     <button type="button" onclick="document.getElementById('demo2').style.fontSize='30px'">click</button>
     <br><br>
 
-    <p id="for">Cualquier texto acá</p>
+    <p id="para">Cualquier texto acá</p>
     <button type="button" onclick="changeColor('rgb(145, 0, 255)');">Azul</button>
     <br><br><br>
 
@@ -134,7 +66,7 @@ input:checked + .slider:before {
     <br><br>
     <h2>JS can validate input</h2>
     <p>please input a number between 1 and 10</p>
-    <br><input id="imput1">
+    <br><input id="imput1" placeholder="type a number here">
     <button  onclick="functionstring1()">Enviar</button>
     <!-- este parrafo reemplaza por el resultado -->
     <p id="reemplazado1"></p>
@@ -148,20 +80,31 @@ input:checked + .slider:before {
 <fieldset>
     <legend>datos de contacto</legend>
 <form action="contacto.html" name="formulario2" method="GET">
-    <label for="">nombre completo</label>
+    <label for="nombre">nombre completo</label>
     <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="type your name here">
     <!--usando maxleght el uso de esto como capa de seguridad
     es muy básico, puede mejorar muchisimo si lo validamos con
     js también-->
-    <label>correo</label>
-    <input type="email" placeholder="type your email here" required>
-    <input type="radio" name="sexo" id="Hombre" value="Hombre" required>Hombre
-    <input type="radio" name="sexo" id="Mujer" value="Mujer"  required>Mujer
+    <label for="email">correo</label>
+    <input id="email" type="email" placeholder="type your email here" required>
+    <br><label for="hombre">hombre</label>
+    <input type="radio" name="sexo" id="Hombre" value="Hombre" required>
+    <label for="mujer">mujer</label>
+    <input type="radio" name="sexo" id="Mujer" value="Mujer"  required>
     <br>
     <input type="checkbox" name="terminos" id="terminos" required>terminos & condiciones
     <br>
     <input type="submit" name="btn" id="btn" value="enviar" required>
-
+    <br>
+    <label for="pais">pais</label><select name="pais" id="pais">
+        <option value="seleccione" selected disabled hidden>seleccione</option>
+        <!--selected selecciona a este primer valor de arriba como pordefecto
+        pero disable lo deshabilita para no selecccionarlo en el despliege
+    y hidden lo oculta -->
+        <option value="bolivia">bolivia</option>
+        <option value="perú">perú</option>
+        <option value="argentina">argentina</option>
+    </select>
 
 </form>
 </fieldset>

@@ -82,68 +82,6 @@ input:checked + .slider:before {
 <body>
     <h1>BIENVENIDOS A MI PRACTICA DE JAVASCRIPT</h1>
 
-    <!--toggles coloridos -->
-    <label  class="switch" >
-        <input type="checkbox" id="switch2" onclick='functiondarklightmode()'>
-        <span class="slider round"></span>
-    </label>
-
-    
-    <!--CHECKED
-        <label  class="switch">
-        <input type="checkbox" checked>
-        <span class="slider round"></span>
-    </label>-->
-
-    <button id="button-dark-light" onclick='functiondarklightmode(),functiondarklightmode2() '>
-       <span id="span-darkmode-to-lightmode">dark mode</span>
-    </button>
-    
-        <!--toggles coloridos terminados
-        source: https://www.w3schools.com/howto/howto_css_switch.asp
-        -->
-
-     <!-- no funciona
-    <button id="button-dark-light" onclick="functiondarklightmode(),style.fontSize='33px',
-    document.getElementById('button-dark-light').innerHTML='light mode'" >
-        dark mode</button>
-        -->   
-
-    <h2>What can JavaScript Do?</h2>
-
-    <p id="demo">JavaScript can change HTML content</p>
-    <!--Source: https://www.w3schools.com/js/js_intro.asp-->
-    <button type="button"
-    onclick='document.getElementById("demo").innerHTML="HELLO WORLD"'>Click ME!</button>
-    <br><br>
-
-    <p id="demo2">Javascript can change the styles of an HTML content</p>
-    <!--Source: https://www.w3schools.com/js/js_intro.asp-->
-    <button type="button" onclick="document.getElementById('demo2').style.fontSize='30px'">click</button>
-    <br><br>
-
-    <p id="for">Cualquier texto acá</p>
-    <button type="button" onclick="changeColor('rgb(145, 0, 255)');">Azul</button>
-    <br><br><br>
-
-    <p id="cambia-color">probando otro metodo</p>
-    <!--documentación:
-    https://www.w3schools.com/jsref/prop_style_color.asp-->
-    <button onclick="changecolorcorto()">cambio</button>
-    
-    <br><br>
-    <h2>JS can validate input</h2>
-    <p>please input a number between 1 and 10</p>
-    <br><input id="imput1">
-    <button  onclick="functionstring1()">Enviar</button>
-    <!-- este parrafo reemplaza por el resultado -->
-    <p id="reemplazado1"></p>
-
-<ul>
-    <li>list1</li>
-    <li>list2</li>
-    <li>list3</li>
-</ul>
 <h1>inputs con required(comprobadores) html5</h1>
 <p>MUCHAS GRACIAS DENTRO DE BREVE NOS PONDREMOS EN CONTACTO</p>
 <fieldset>
@@ -160,10 +98,11 @@ input:checked + .slider:before {
     <input type="checkbox" name="terminos" id="terminos" required>terminos & condiciones
     <br>
     <input type="submit" name="btn" id="btn" value="enviar" required>
-
+   
 
 </form>
 </fieldset>
+<a href="index.html">volver a inicio</a>
 <h1>lección 18: Vamos a trabajar con datos</h1>
 <!--FORMULARIOS CON HTML Y JS-->
 

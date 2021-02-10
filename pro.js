@@ -21,7 +21,7 @@ function functionstring1() {
 }
 /** EMPEZANDO DARK MODE */
 function changeColor(newColor) {
-    var elem = document.getElementById('for');
+    var elem = document.getElementById('para');
     elem.style.color = newColor;
 }
 
@@ -36,7 +36,6 @@ function functiondarklightmode() {
     y = palanca.classList.toggle("dark-mode");
 
 }
-alert("hola");
 
 /*document.getElementById("span-darkmode-to-lightmode").innerHTML="light mode" */
 /*function textlightmode(){
