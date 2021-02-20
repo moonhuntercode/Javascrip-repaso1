@@ -52,3 +52,16 @@ function functiondarklightmode() {
             }
 */
 /** TERMINANDO DARK MODE */
+
+/* TEMPLATE STRINGS */ 
+const nombrecito='puto'
+    const apellido='putin'
+    // clg es snipet que ayuda a escribir rapido
+    // console.log(object);
+    console.log('este es el '+nombrecito+' amo '+apellido);
+    //haciendo uso de template string abajo
+    console.log(`el ${nombrecito} amo apellida ${apellido} `);
+    document.write(`imprimimos en consola ${nombrecito} q apellida ${apellido}`)
+    
+    
+    /* TEMPLATE STRINGS FINALIZADO*/ 
