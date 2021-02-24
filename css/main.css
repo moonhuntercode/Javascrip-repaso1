@@ -84,3 +84,8 @@ a{
   color: #00ee9f;
   background-color: black;
 }
+.editor-texto{
+  background-color: black;
+  color: #00ee9f;
+  border-right: 1px solid var(--black07);
+}
