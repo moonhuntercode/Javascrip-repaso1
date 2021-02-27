@@ -53,6 +53,7 @@ function functiondarklightmode() {
 */
 /** TERMINANDO DARK MODE */
 
+
 /* TEMPLATE STRINGS */ 
 const nombrecito='puto'
     const apellido='putin'
@@ -61,7 +62,34 @@ const nombrecito='puto'
     console.log('este es el '+nombrecito+' amo '+apellido);
     //haciendo uso de template string abajo
     console.log(`el ${nombrecito} amo apellida ${apellido} `);
-    document.write(`imprimimos en consola ${nombrecito} q apellida ${apellido}`)
+    document.write(`imprimimos en consola ${nombrecito} q apell0ida ${apellido}`)
     
     
     /* TEMPLATE STRINGS FINALIZADO*/ 
+    function formulario_1(){
+        var a ,text;
+        a=document.getElementById("dato_recibido1").value;
+        var x=a.length;
+    var cadenaInvertida="";
+    while (x>=0) {
+        cadenaInvertida+=a.charAt(x);
+        x--;
+    }
+        document.getElementById("texto_reemplazado1").innerHTML=cadenaInvertida;
+        
+        }
+        
+        // FUNCION DE INVERTIR CARACTERES
+ 
+function invertir(cadena){
+    var x=cadena.length;
+    var cadenaInvertida="";
+    while (x>=0) {
+        cadenaInvertida+=cadena.charAt(x);
+        x--;
+    }
+    return cadenaInvertida;
+}
+str_cadena="hola putos";
+mos=()=>{ console.log( invertir(str_cadena))}
+mos()
