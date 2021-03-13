@@ -10,3 +10,6 @@ console.log(arra2)
 console.log(arra1)
 console.log(users)
 console.log(any)
+/* conclusión: arrays puede imprimir
+con todas las variables, casi todos los 
+tipos de datos de js */
