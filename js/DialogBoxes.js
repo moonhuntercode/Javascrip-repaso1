@@ -1,7 +1,7 @@
 function dialogfunction(){
-    let retval=confirm("confirmado")
+    let retval=confirm("quiere continuar?")
     if (retval==true) {
-        document.write("confirmadisimo")
+        document.write("el cliente quiere todo confirmadísimo")
         return true
     }
     else{
