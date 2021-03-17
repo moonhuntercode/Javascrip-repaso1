@@ -15,4 +15,19 @@ MostrarConsola(a1,a2);
         EnDocument(a1,a2)
     }
 }
-Mostrar(a1,a2,false);
+/* aquí comprobamos que
+si no quiero no pongo
+el false como parámetro
+pero si quiero, sí
+pero por eso entra en
+el tema de parámetros
+opcionales.
+*/
+// Mostrar(a1,a2); el tercer parametro se queda false
+
+Mostrar(a1,a2,true);
+/* aqui arriba cambiamos
+el tercer parametro
+a true imprimiendo
+en el documento 
+con document.write */
