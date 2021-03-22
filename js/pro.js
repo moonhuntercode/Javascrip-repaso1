@@ -33,7 +33,7 @@ function changecolorcorto() {
 
 function functiondarklightmode() {
     var palanca = document.body;
-    y = palanca.classList.toggle("dark-mode");
+    y = palanca.classNameList.toggle("dark-mode");
 
 }
 

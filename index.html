@@ -20,18 +20,18 @@
            title="El mejor lugar para encontrar más información acerca de la misión de Mozilla
                   y cómo contribuir">la página de inicio de Mozilla</a>.
         </p>
-    <br>
+    <br/>
     <!--toggles coloridos -->
-    <label  class="switch" >
+    <label  className="switch" >
         <input type="checkbox" id="switch2" onclick='functiondarklightmode()'>
-        <span class="slider round"></span>
+        <span className="slider round"></span>
     </label>
 
     
     <!--CHECKED
-        <label  class="switch">
+        <label  className="switch">
         <input type="checkbox" checked>
-        <span class="slider round"></span>
+        <span className="slider round"></span>
     </label>-->
 
     <button id="button-dark-light" onclick='functiondarklightmode(),functiondarklightmode2() '>
@@ -54,26 +54,26 @@
     <!--Source: https://www.w3schools.com/js/js_intro.asp-->
     <button type="button"
     onclick='document.getElementById("demo").innerHTML="HELLO WORLD"'>Click ME!</button>
-    <br><br>
+    <br/><br/>
 
     <p id="demo2">Javascript can change the styles of an HTML content</p>
     <!--Source: https://www.w3schools.com/js/js_intro.asp-->
     <button type="button" onclick="document.getElementById('demo2').style.fontSize='30px'">click</button>
-    <br><br>
+    <br/><br/>
 
     <p id="para">Cualquier texto acá</p>
     <button type="button" onclick="changeColor('rgb(145, 0, 255)');">Azul</button>
-    <br><br><br>
+    <br/><br/><br/>
 
     <p id="cambia-color">probando otro metodo</p>
     <!--documentación:
     https://www.w3schools.com/jsref/prop_style_color.asp-->
     <button onclick="changecolorcorto()">cambio</button>
     
-      <br><br>
+      <br/><br/>
     <h2>JS can validate input</h2>
     <p>please input a number between 1 and 10</p>
-    <br><input id="imput1" placeholder="type a number here">
+    <br/><input id="imput1" placeholder="type a number here">
     <button  onclick="functionstring1()">Enviar</button>
     <!-- este parrafo reemplaza por el resultado -->
     <p id="reemplazado1"></p>
@@ -102,15 +102,15 @@ tocame para esconder!</button>
     js también-->
     <label for="email">correo</label>
     <input id="email" type="email" placeholder="type your email here" required>
-    <br><label for="hombre">hombre</label>
+    <br/><label for="hombre">hombre</label>
     <input type="radio" name="sexo" id="Hombre" value="Hombre" required>
     <label for="mujer">mujer</label>
     <input type="radio" name="sexo" id="Mujer" value="Mujer"  required>
-    <br>
+    <br/>
     <input type="checkbox" name="terminos" id="terminos" required>terminos & condiciones
-    <br>
+    <br/>
     <input type="submit" name="btn" id="btn" value="enviar" required>
-    <br>
+    <br/>
     <label for="pais">pais</label>
     <select name="pais" id="pais">
         <option value="seleccione" selected disabled hidden>seleccione</option>
@@ -127,7 +127,7 @@ tocame para esconder!</button>
 </fieldset>
 <button type="button" onclick="document.getElementById('hide1').style.display='block' ">
     tocame para mostrar denuevo!</button>
-    <br><br><br>
+    <br/><br/><br/>
     <h1>formularios con lógica</h1>
     <fieldset>
     
@@ -159,12 +159,12 @@ tocame para esconder!</button>
     
 <h1>juego de desafios javascript</h1>
 <p>What do we have to put instead of the "…" to launch the function greeting in 10 sec?</p>
-<div class="editor-texto">
-    function greeting() {<br>
-        console.log('Hello, Mr. Smith!');<br>
-       } <br>
+<div className="editor-texto">
+    function greeting() {<br/>
+        console.log('Hello, Mr. Smith!');<br/>
+       } <br/>
       
-      setTimeout(greeting, ...);<br>
+      setTimeout(greeting, ...);<br/>
 </div>
 <p>Enter a number</p>
 <input type="text" name="" id="input1">
