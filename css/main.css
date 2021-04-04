@@ -1,11 +1,15 @@
  
         body{
+          justify-content: center;
+          background-image: linear-gradient(135deg, #be13b3 0, #b818aa 16.67%, #a92ab3 33.33%, #be55d8 50%, #9f4eca 66.67%, #8347bc 83.33%, #6842af 100%);background-image: linear-gradient(135deg, #b127a8 0, #fb62ef 16.67%, #dd5ce5 33.33%, #b259c8 50%, #753995 66.67%, #462764 83.33%, #3e1786 100%);
+          background-repeat: no-repeat;
+          text-align: center;
             background-color:rgb(255, 255, 255);
             color: black;
+            
+            height: 100vh;
         }
-        p{
-            background-color: rgba(101, 255, 229, 0.418);
-        }
+        
         .dark-mode{
             background-color: black;
             color: white;
@@ -88,4 +92,10 @@ a{
   background-color: black;
   color: #00ee9f;
   border-right: 1px solid var(--black07);
+}
+ol{
+  color: black;
+}
+subtitulo{
+  
 }
