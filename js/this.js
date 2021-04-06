@@ -2,8 +2,12 @@
 //function ->global(window,global)
 
 const video = {
-    title='a',
+    title: 'a',
     play() {
         console.log(this);
     }
+};
+function playVideo() {
+    console.log(this);
 }
+playVideo()
