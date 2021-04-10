@@ -4,6 +4,7 @@
 function sumar(n1, n2, multiply) {
     var suma = n1 + n2;
     multiply(suma);
+
     return suma;
 };
 sumar(10, 30, function (z) {
