@@ -1,13 +1,14 @@
  
         body{
           justify-content: center;
-          
+          align-items: center;
           background-repeat: no-repeat;
           text-align: center;
             background-color:rgb(26, 26, 26);
             color: rgb(255, 255, 255);
             font-size: 30px;
             height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
         }
         
         .dark-mode{
@@ -100,4 +101,23 @@ ol{
   width: 160px;
   left: 0;
   
+}
+#imagenportada{
+ background-image: url(../img/degradadobonito1.jpg);
+ background-position: center center;
+ background-size: cover;
+ background-attachment: fixed;
+ color:rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+ padding: 3px;
+ height:70vh;
+}
+#h1portada{
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.562) ;
+  
+}
+h1{
+  font-size: 1.3em;
 }
