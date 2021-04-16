@@ -111,9 +111,10 @@ ol{
   font-weight: bold;
   text-align: center;
  padding: 3px;
- height:70vh;
+ height:80vh;
 }
 #h1portada{
+  padding: 80px;
   font-size: 1.3em;
   background-color: rgba(0, 0, 0, 0.562) ;
   
